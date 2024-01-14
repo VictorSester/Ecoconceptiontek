@@ -1,0 +1,293 @@
+@font-face {
+    font-family: "LaBelleAurore";
+    src: url("/src/LaBelleAurore-Regular.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: 'OpenSans';
+    src: url("/src/OpenSans-VariableFont_wdth,wght.ttf") format('truetype');
+}
+
+.main-container {
+    width: 1847px;
+    margin: 0 auto;
+    /* This centers the container */
+    overflow: hidden;
+    /* Prevents horizontal scrolling on smaller screens */
+}
+
+header,
+section,
+nav {
+    width: 100%;
+    max-width: 1847px;
+}
+
+/* Base styles for the page */
+body {
+    font-family: "MaPoliceTexte", sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+}
+
+.header-fullscreen {
+    position: relative;
+    height: 100vh;
+    width: 1847px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+/* Additional styles for the 'find-us' section */
+#find-us {
+    width: 1847px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #1E1E1E;
+    /* Dark blue background for text */
+}
+
+#find-us .text-content {
+    padding: 20px;
+    color: white;
+    /* Text color */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#find-us .map-container {
+    height: 100%;
+    /* Full height of the section */
+    overflow: hidden;
+    /* Ensures no scrollbars appear */
+}
+
+@media (max-width: 992px) {
+    #find-us {
+        flex-direction: column;
+        /* Stack the text and map on smaller screens */
+    }
+
+    #find-us .text-content,
+    #find-us .map-container {
+        width: 100%;
+        /* Full width on smaller screens */
+    }
+}
+
+nav {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    padding-right: 20px;
+    margin-top: -60px;
+    display: flex;
+    justify-content: flex-end;
+    /* Align items to the right */
+}
+
+nav ul li {
+    display: inline;
+    margin-left: 20px;
+    font-family: 'LaBelleAurore', sans-serif;
+    /* Custom font */
+    font-size: 38px;
+    /* Font size */
+    font-weight: 400;
+    /* Font weight */
+    line-height: 50px;
+    /* Line height */
+    letter-spacing: 0em;
+    /* Letter spacing */
+    color: #f2f2f2;
+}
+
+a.a {
+    font-family: 'LaBelleAurore', sans-serif;
+    color: #f2f2f2;
+}
+
+h1.h1 {
+    font-family: "LaBelleAurore", sans-serif;
+    color: #fff;
+    font-size: 46px;
+    font-weight: 400;
+    padding-top: 45px;
+    width: 391px;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    max-height: 40px;
+    margin-right: 10px;
+}
+
+/* Styles for divided sections */
+.split-section {
+    display: flex;
+    align-items: stretch;
+    justify-content: stretch;
+}
+
+body,
+html {
+    height: 100%;
+    /* Ensure no white space below the footer */
+    margin: 0;
+}
+
+/* Styles for the footer logos section */
+.footer-logos {
+    background-color: #1E1E1E;
+    /* Replace with your desired shade of grey */
+    padding: 10px;
+    height: 335px;
+    width: 1847px;
+    text-align: center;
+    /* Center the logos */
+}
+
+.footer-info {
+    background-color: #000;
+    /* Black background */
+    color: #fff;
+    /* White text */
+    display: flex;
+    /* Enable Flexbox */
+    justify-content: space-between;
+    /* Distribute space between elements */
+    align-items: center;
+    /* Vertically center the items */
+    padding: 10px;
+    height: 335px;
+    width: 1847px;
+}
+
+.footer-info p,
+.footer-info a {
+    margin: 0;
+    /* Remove default margins */
+    padding: 0 20px;
+    /* Add padding on both sides */
+}
+
+.footer-logo {
+    margin-right: 50px;
+    /* Space between logos */
+    height: 150px;
+    /* Adjust as needed */
+    padding-top: 100px;
+}
+
+.footer-link {
+    color: #fff;
+    text-decoration: none;
+    height: 150px;
+    /* Remove this if you don't need a specific height for the link */
+}
+
+.footer-link:hover {
+    text-decoration: underline;
+}
+
+@media (max-width: 992px) {
+
+    .split-section,
+    .text-content,
+    .image-content,
+    .video-trigger,
+    .carousel-item {
+        flex: 0 0 100%;
+        width: 100%;
+        height: auto;
+        /* Adjust height for smaller screens */
+    }
+}
+
+#contact-section {
+    background-color: #000;
+    width: 1847px;
+    /* Background color */
+    color: #fff;
+    /* Text color */
+    padding: 50px 0;
+    /* Padding */
+}
+
+#contact-section h3 {
+    margin-bottom: 20px;
+}
+
+#contact-section form {
+    display: grid;
+    grid-gap: 20px;
+}
+
+#contact-section input,
+#contact-section textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    background: none;
+    border: 1px solid #fff;
+    border-radius: 4px;
+    color: #fff;
+}
+
+#contact-section button {
+    padding: 10px;
+    width: 100%;
+    background-color: #fff;
+    border: none;
+    border-radius: 4px;
+    color: #000;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#contact-section button:hover {
+    background-color: #f2f2f2;
+}
+
+#contact-info-container ul {
+    list-style: none;
+    padding: 0;
+}
+
+#contact-info-container li {
+    margin-bottom: 5px;
+}
+
+#contact-form-container,
+#contact-info-container {
+    margin-top: 20px;
+}
+
+@media (min-width: 768px) {
+
+    #contact-form-container,
+    #contact-info-container {
+        margin-top: 0;
+    }
+}

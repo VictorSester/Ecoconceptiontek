@@ -1,0 +1,39 @@
+@font-face {
+    font-family: "LaBelleAurore";
+    src: url("/src/LaBelleAurore-Regular.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: 'OpenSans';
+    src: url("/src/OpenSans-VariableFont_wdth,wght.ttf") format('truetype');
+}
+
+/* Base styles for the page */
+body {
+    font-family: "MaPoliceTexte", sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+}
+
+.footer-logos {
+    background-color: #1E1E1E;
+    padding: 10px;
+    text-align: center;
+}
+
+.footer-info {
+    background-color: #000;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}

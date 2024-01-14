@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Le Parlon Gourmand</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="src/css/global.css" />
+    <link rel="stylesheet" type="text/css" href="src/css/place.css" />
+</head>
+
+<body>
+    <div class="main-container">
+        <section class="header-fullscreen">
+            <nav>
+                <a href="index.html">
+                    <div class="logo">
+                        <img src="src/images/logo.svg" alt="Logo" />
+                        <h1 class="ma-police-titre h1">Le pavillon gourmand</h1>
+                    </div>
+                </a>
+                <ul>
+                    <li><a class="ma-police-lien a" href="place.html">Un lieu</a></li>
+                    <li><a class="ma-police-lien a" href="moment.html">Un moment</a></li>
+                    <li><a class="ma-police-lien a" href="findus.html">Nous trouver</a></li>
+                </ul>
+            </nav>
+            <img src="src/images/1.webp" alt="En-tête" class="img-fluid w-100 " loading="lazy""
+                style=" height: 100vh; object-fit: cover; position: absolute; z-index: -1;">
+        </section>
+        <main>
+            <section id="lieu" class="split-section d-flex">
+                <div class="text-content w-50">
+                    <h2 class="ma-police-titre h2">Un Lieu</h2>
+                    <p class="ma-police-titre p">Univers singulier, identitaire et façonné par l’homme. Essences de bois
+                        brûlé, pierre de Savoie
+                        et
+                        cristal taillé, la salle, apaisante et épurée, accueille l’authentique transparence réconfort.
+                    </p>
+                </div>
+                <div class="carousel slide w-50" id="imageCarousel" data-ride="carousel" data-interval="5000">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="src/images/salledehors.webp" class="d-block w-100 h-100 " loading="lazy""
+                                alt=" Salle de restaurant">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="src/images/sallebien.webp" class="d-block w-100 h-100"
+                                alt="Autre vue de salle" " loading=" lazy">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="src/images/sallebougie.webp" class="d-block w-100 h-100"
+                                alt="Autre vue de salle" " loading=" lazy">
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="jardin" class="split-section d-flex">
+                <div class="image-content w-50">
+                    <img src="src/images/mecjardin.webp" class="d-block w-100 h-100" alt="Jardin" " loading=" lazy">
+                </div>
+                <div class="text-content w-50">
+                    <h2 class="ma-police-titre h2">Le Jardin</h2>
+                    <p class="ma-police-titre p">Inspiration quotidienne, dans son jus, le végétal s’exprime au gré du
+                        temps, dans ses
+                        moindres
+                        mouvements, discret ou profus, libre d’être soi.</p>
+                </div>
+            </section>
+            <section id="esprits-engages" class="split-section">
+                <div class="left-side w-50">
+                    <div class="text-content">
+                        <!-- Contenu texte -->
+                        <h2 class="ma-police-titre h2">Esprits Engagés</h2>
+                        <p class="ma-police-titre p">Épouser une identité unique, pousser jusqu’à l’ultime sa passion
+                            sensible et émotionnelle, curieuse et libre d’être.</p>
+                    </div>
+                    <div class="image-content">
+                        <!-- Image fixe -->
+                        <img src="src/images/employe.webp" alt="Description" class="img-fluid" " loading=" lazy" />
+                    </div>
+                </div>
+
+                <!-- Partie droite avec image qui se transforme en vidéo au survol -->
+                <div class="video-trigger">
+                    <!-- Image de prévisualisation de la vidéo -->
+                    <img src="src/images/chef.webp" alt="Aperçu vidéo" class="video-placeholder img-fluid" />
+
+                    <!-- Iframe de la vidéo YouTube cachée initialement -->
+                    <iframe class="video-frame" src="" frameborder="0" allow="autoplay; encrypted-media"
+                        allowfullscreen></iframe>
+                </div>
+            </section>
+        </main>
+        <footer>
+            <!-- Gray background section for logos -->
+            <div class="footer-logos">
+                <img src="src/images/relais-chateaux.svg" alt="Relais & Châteaux" class="footer-logo" />
+                <img src="src/images/michelin-2023.svg" alt="Michelin 2023" class="footer-logo" />
+                <img src="src/images/gault-millau.svg" alt="Gault&Millau" class="footer-logo" />
+                <img src="src/images/ecotable.svg" alt="Écotable" class="footer-logo" />
+            </div>
+
+            <!-- Black background section for name and mentions légales -->
+            <div class="footer-info">
+                <p class="mb-0">Le pavillon gourmand</p>
+                <a href="#" class="footer-link">Mentions légales</a>
+            </div>
+        </footer>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+        <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+        <script>
+            $(document).ready(function () {
+                // L'ID de la vidéo YouTube
+                var youtubeVideoId = "uceaJ__FZg4";
+
+                // Au survol de l'image de prévisualisation
+                $('.video-trigger').hover(
+                    function () {
+                        // Affiche l'iframe et définit la source pour jouer la vidéo
+                        $(this).find('.video-frame').show().attr('src', 'https://www.youtube.com/embed/' + youtubeVideoId + '?autoplay=1&mute=1');
+                    }, function () {
+                        // Cache l'iframe et enlève la source pour arrêter la vidéo
+                        $(this).find('.video-frame').hide().attr('src', '');
+                    }
+                );
+            });
+        </script>
+    </div>
+</body>
+
+</html>

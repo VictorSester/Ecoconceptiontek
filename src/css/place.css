@@ -1,0 +1,350 @@
+.main-container {
+    margin: 0 auto;
+    /* This centers the container */
+    overflow: hidden;
+    /* Prevents horizontal scrolling on smaller screens */
+}
+
+header,
+footer,
+section,
+nav {
+    width: 100%;
+}
+
+/* Base styles for the page */
+body {
+    font-family: "MaPoliceTexte", sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+}
+
+.header-fullscreen {
+    position: relative;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+nav {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    padding-right: 20px;
+    margin-top: -60px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+nav ul li {
+    display: inline;
+    margin-left: 20px;
+    font-family: 'LaBelleAurore', sans-serif;
+    /* Custom font */
+    font-size: 38px;
+    /* Font size */
+    font-weight: 400;
+    /* Font weight */
+    line-height: 50px;
+    /* Line height */
+    letter-spacing: 0em;
+    /* Letter spacing */
+    color: #f2f2f2;
+}
+
+a.a {
+    font-family: 'LaBelleAurore', sans-serif;
+    color: #f2f2f2;
+}
+
+h1.h1 {
+    font-family: "LaBelleAurore", sans-serif;
+    color: #fff;
+    font-size: 46px;
+    font-weight: 400;
+    padding-top: 45px;
+    width: 391px;
+}
+
+h2.h2 {
+    font-family: "OpenSans", sans-serif;
+    color: #F2F2F2;
+    font-weight: 400;
+    line-height: 70px;
+    size: 54px;
+}
+
+#lieu h2.h2 {
+    width: 594px;
+    height: 70px;
+    position: absolute;
+    top: 1465px;
+    left: 60px;
+}
+
+#esprits-engages h2.h2 {
+    width: 594px;
+    height: 70px;
+    position: absolute;
+    top: 3383px;
+    left: 60px;
+}
+
+#jardin h2.h2 {
+    width: 594px;
+    height: 70px;
+    position: absolute;
+    top: 2545px;
+    left: 1020px;
+}
+
+p.p {
+    font-family: "OpenSans", sans-serif;
+    color: #F2F2F2;
+    font-weight: 300;
+    line-height: 56px;
+    size: 26px;
+}
+
+#lieu p.p {
+    width: 594px;
+    height: 224px;
+    position: absolute;
+    top: 1550px;
+    left: 60px;
+}
+
+#jardin p.p {
+    width: 594px;
+    height: 224px;
+    position: absolute;
+    top: 2630px;
+    left: 1020px;
+}
+
+#esprits-engages p.p {
+    width: 594px;
+    height: 224px;
+    position: absolute;
+    top: 3468px;
+    left: 60px;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    max-height: 40px;
+    margin-right: 10px;
+}
+
+/* Styles for divided sections */
+.split-section {
+    display: flex;
+    align-items: stretch;
+    justify-content: stretch;
+}
+
+.text-content,
+.image-content,
+.video-trigger {
+    flex: 0 0 1920;
+    /* Fixed width and prevent flex-grow */
+    height: 1080px;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.text-content {
+    background-color: #051528;
+    /* Dark blue */
+    color: white;
+    padding: 20px;
+    flex-direction: column;
+}
+
+.image-content img,
+.video-placeholder,
+.carousel-item img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+
+.carousel,
+.carousel-inner,
+.carousel-item {
+    height: 1080px;
+    /* Fixed height for carousel */
+}
+
+.carousel-item {
+    flex: 0 0 960px;
+    /* Fixed width for carousel items */
+}
+
+.carousel-inner,
+.carousel-item,
+.image-content img {
+    height: 100%;
+}
+
+.carousel-item img,
+.image-content img {
+    object-fit: cover;
+    /* Ensure images cover the entire space without distortion */
+    width: 100%;
+}
+
+/* Styles for the video trigger and video itself */
+.video-trigger {
+    position: relative;
+    width: 50%;
+    cursor: pointer;
+    /* Change the cursor to indicate the element is interactive */
+}
+
+.video-placeholder,
+.video-frame {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    /* Take the full height of .video-trigger */
+}
+
+.video-frame {
+    display: none;
+    /* The video is hidden until hover */
+    z-index: 10;
+    /* Ensure the video is above the preview image */
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    width: 100%;
+}
+
+body,
+html {
+    height: 100%;
+    margin: 0;
+}
+
+.footer-logos {
+    background-color: #1E1E1E;
+    padding: 10px;
+    height: 335px;
+    width: 1920px;
+    text-align: center;
+}
+
+.footer-info {
+    background-color: #000;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    height: 335px;
+    width: 1920px;
+}
+
+.footer-info p,
+.footer-info a {
+    margin: 0;
+    padding: 0 20px;
+}
+
+.footer-logo {
+    margin-right: 50px;
+    height: 150px;
+    padding-top: 100px;
+}
+
+.footer-link {
+    color: #fff;
+    text-decoration: none;
+    height: 150px;
+}
+
+.footer-link:hover {
+    text-decoration: underline;
+}
+
+@media (max-width: 992px) {
+
+    .split-section,
+    .text-content,
+    .image-content,
+    .video-trigger,
+    .carousel-item {
+        flex: 0 0 100%;
+        width: 100%;
+        height: auto;
+    }
+}
+
+/* Styles for "esprits-engages" section */
+#esprits-engages {
+    display: flex;
+    align-items: stretch;
+}
+
+#esprits-engages .left-side {
+    display: flex;
+    flex-direction: column;
+    width: 960px;
+}
+
+#esprits-engages .text-content,
+#esprits-engages .image-content {
+    height: 540px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.video-trigger {
+    position: relative;
+    width: 50%;
+    cursor: pointer;
+}
+
+.video-placeholder,
+.video-frame {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.video-frame {
+    display: none;
+    z-index: 10;
+}

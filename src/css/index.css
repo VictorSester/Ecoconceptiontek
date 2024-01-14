@@ -1,0 +1,398 @@
+.main-container {
+    margin: 0 auto;
+    /* This centers the container */
+    overflow: hidden;
+    /* Prevents horizontal scrolling on smaller screens */
+}
+
+header,
+footer,
+section,
+nav {
+    width: 100%;
+}
+
+/* Base styles for the page */
+body {
+    font-family: "MaPoliceTexte", sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+}
+
+.header-fullscreen {
+    position: relative;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+nav {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    padding-right: 20px;
+    margin-top: -60px;
+    display: flex;
+    justify-content: flex-end;
+    /* Align items to the right */
+}
+
+nav ul li {
+    display: inline;
+    margin-left: 20px;
+    font-family: 'LaBelleAurore', sans-serif;
+    /* Custom font */
+    font-size: 38px;
+    /* Font size */
+    font-weight: 400;
+    /* Font weight */
+    line-height: 50px;
+    /* Line height */
+    letter-spacing: 0em;
+    /* Letter spacing */
+    color: #f2f2f2;
+}
+
+a.a {
+    font-family: 'LaBelleAurore', sans-serif;
+    color: #f2f2f2;
+}
+
+h1.h1 {
+    font-family: "LaBelleAurore", sans-serif;
+    color: #fff;
+    font-size: 46px;
+    font-weight: 400;
+    padding-top: 45px;
+    width: 391px;
+}
+
+h2.h2 {
+    font-family: "OpenSans", sans-serif;
+    color: #F2F2F2;
+    font-weight: 400;
+    line-height: 70px;
+    size: 54px;
+}
+
+#lieu h2.h2 {
+    width: 594px;
+    height: 70px;
+    position: absolute;
+    top: 1465px;
+    left: 60px;
+}
+
+#find h2.h2 {
+    width: 594px;
+    height: 70px;
+    position: absolute;
+    top: 3383px;
+    left: 60px;
+}
+
+#moment h2.h2 {
+    width: 594px;
+    height: 70px;
+    position: absolute;
+    top: 2545px;
+    left: 1020px;
+}
+
+p.p {
+    font-family: "OpenSans", sans-serif;
+    color: #F2F2F2;
+    font-weight: 300;
+    line-height: 56px;
+    size: 26px;
+}
+
+#lieu p.p {
+    width: 594px;
+    height: 224px;
+    position: absolute;
+    top: 1550px;
+    left: 60px;
+}
+
+#moment p.p {
+    width: 594px;
+    height: 224px;
+    position: absolute;
+    top: 2630px;
+    left: 1020px;
+}
+
+#find p.p {
+    width: 594px;
+    height: 224px;
+    position: absolute;
+    top: 3468px;
+    left: 60px;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    max-height: 40px;
+    margin-right: 10px;
+}
+
+/* Styles for divided sections */
+.split-section {
+    display: flex;
+    align-items: stretch;
+    justify-content: stretch;
+}
+
+.text-content,
+.image-content,
+.video-trigger {
+    flex: 0 0 1920;
+    /* Fixed width and prevent flex-grow */
+    height: 1080px;
+
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+#lieu .text-content {
+    background-color: #051528;
+    height: 1080px;
+    color: white;
+    padding: 20px;
+    flex-direction: column;
+
+}
+
+#moment .text-content {
+    background-color: #251715;
+    /* Dark blue */
+    color: white;
+    padding: 20px;
+    flex-direction: column;
+}
+
+#find .text-content {
+    background-color: #142C08;
+    /* Dark blue */
+    color: white;
+    padding: 20px;
+    flex-direction: column;
+}
+
+.image-content img,
+.video-placeholder,
+.carousel-item img {
+    object-fit: cover;
+    width: 1847px;
+    height: 1080px;
+}
+
+.carousel,
+.carousel-inner,
+.carousel-item {
+    height: 1080px;
+    /* Fixed height for carousel */
+}
+
+.carousel-item {
+    flex: 0 0 960px;
+    /* Fixed width for carousel items */
+}
+
+.carousel-inner,
+.carousel-item,
+.image-content img {
+    height: 100%;
+}
+
+.carousel-item img,
+.image-content img {
+    object-fit: cover;
+    /* Ensure images cover the entire space without distortion */
+    width: 100%;
+}
+
+#lieu {
+    height: 1080px;
+    top: 1080px;
+}
+
+#firstcar .carousel-static-text {
+    position: absolute;
+    bottom: 110px;
+    left: 10px;
+    z-index: 3;
+    color: #fff;
+    font-family: 'OpenSans', sans-serif;
+    font-weight: 400;
+    size: 54px;
+    line-height: 70px;
+}
+
+#firstcar .carousel-item {
+    position: relative;
+    width: 1847px;
+    /* Set width */
+    height: 1080px;
+    /* Set height */
+}
+
+#firstcar .carousel-item img {
+    width: 100%;
+    /* Ensure image covers the entire item */
+    height: 100%;
+    /* Ensure image covers the entire item */
+    object-fit: cover;
+    /* Maintain aspect ratio while covering the item */
+}
+
+body,
+html {
+    height: 100%;
+    /* Ajoutez ceci pour s'assurer que le footer n'a pas d'espace blanc en dessous */
+    margin: 0;
+}
+
+.footer-logos {
+    background-color: #1E1E1E;
+    /* Replace with your desired shade of grey */
+    padding: 10px;
+    height: 335px;
+    width: 1847px;
+    text-align: center;
+    /* Center the logos */
+}
+
+.image-with-text-overlay {
+    position: relative;
+    width: 100%;
+    height: 1080px;
+}
+
+.text-overlay {
+    position: absolute;
+    bottom: 110px;
+    left: 10px;
+    z-index: 3;
+    color: #fff;
+    font-family: 'OpenSans', sans-serif;
+    font-weight: 400;
+    font-size: 54px;
+    /* Adjusted from 'size' to 'font-size' */
+    line-height: 70px;
+}
+
+/* Ensure other sections are adjusted accordingly */
+/* Example for 'lieu' section */
+#lieu .image-content {
+    width: 50%;
+    /* Adjust width as per your layout */
+}
+
+/* Apply similar CSS for other sections where you replace carousel with fixed image */
+
+
+.footer-info {
+    background-color: #000;
+    /* Black background */
+    color: #fff;
+    /* White text */
+    display: flex;
+    /* Enable Flexbox */
+    justify-content: space-between;
+    /* Distribute space between elements */
+    align-items: center;
+    /* Vertically center the items */
+    padding: 10px;
+    height: 335px;
+    width: 1847px;
+}
+
+.footer-info p,
+.footer-info a {
+    margin: 0;
+    /* Remove default margins */
+    padding: 0 20px;
+    /* Add padding on both sides */
+}
+
+#moment .text-content {
+    background-color: #251715;
+    color: white;
+    padding: 20px;
+    flex-direction: column;
+    display: flex;
+    /* Ensure it's a flex container */
+    justify-content: center;
+    /* Center content vertically */
+    align-items: center;
+    /* Center content horizontally */
+}
+
+#moment .carousel {
+    flex: 1;
+    /* Take up 50% of the space */
+}
+
+.split-section {
+    display: flex;
+    flex-wrap: wrap;
+    /* Allow items to wrap if needed */
+}
+
+
+.footer-logo {
+    margin-right: 50px;
+    /* Space between logos */
+    height: 150px;
+    /* Adjust as needed */
+    padding-top: 100px;
+}
+
+.footer-link {
+    color: #fff;
+    text-decoration: none;
+    height: 150px;
+    /* Remove this if you don't need a specific height for the link */
+}
+
+
+.footer-link:hover {
+    text-decoration: underline;
+}
+
+
+@media (max-width: 992px) {
+
+    .split-section,
+    .text-content,
+    .image-content,
+    .video-trigger,
+    .carousel-item {
+        flex: 0 0 100%;
+        width: 100%;
+        height: auto;
+        /* Adjust height for smaller screens */
+    }
+}
